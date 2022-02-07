@@ -21,10 +21,10 @@
 
   @Component({})
   export default class Button extends Vue {
-    @Prop({ required: true })
+    @Prop({required: true, validator: (type: any) => Object.values(ButtonType).includes(type) })
     private type!: ButtonType;
 
-    @Prop({ default: false })
+    @Prop({ type: Boolean, default: false })
     private isOutlined!: boolean;
 
     private get buttonColor(): string {
