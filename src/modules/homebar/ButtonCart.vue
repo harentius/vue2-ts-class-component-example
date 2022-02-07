@@ -1,6 +1,6 @@
 <template>
   <button-component :type="ButtonType.SUCCESS">
-    <v-icon small>mdi-checkbox-marked-circle</v-icon> Cart: {{itemsCount}}
+    <v-icon small>mdi-cart</v-icon>{{itemsCount}}
   </button-component>
 </template>
 
