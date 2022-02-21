@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "depcruise-modules": "depcruise --include-only \"^src/modules\" --output-type dot src --webpack-config ./webpack.config.js | dot -T svg > ./dependencygraph.svg"
   },
   "dependencies": {
     "@mdi/font": "5.9.55",
@@ -24,6 +25,7 @@
     "@vue/cli-plugin-vuex": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
     "deepmerge": "^4.2.2",
+    "dependency-cruiser": "^11.3.1",
     "sass": "~1.32",
     "sass-loader": "^10",
     "typescript": "~4.1.5",
