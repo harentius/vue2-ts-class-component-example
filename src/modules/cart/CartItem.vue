@@ -3,8 +3,7 @@
     :cover="product.image"
     :title="product.title"
   >
-    <p>{{ product.description }}</p>
-    <button-add-to-cart />
+    {{ product.description }}
   </card>
 </template>
 
@@ -12,12 +11,11 @@
   import { Component, Prop, Vue } from 'vue-property-decorator';
   import { Card } from '@/components/ui';
   import { Product as ProductData } from '@/modules/client';
-  import { ButtonAddToCart } from '@/modules/cart';
 
   @Component({
-    components: { Card, ButtonAddToCart }
+    components: { Card }
   })
-  export default class Product extends Vue {
+  export default class CartItem extends Vue {
     @Prop({ type: Object, required: true })
     private product!: ProductData;
   }

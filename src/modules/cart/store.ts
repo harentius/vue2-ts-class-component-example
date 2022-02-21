@@ -1,8 +1,8 @@
 export default {
   state: {
     products: {
-      data:
-    }
+      data: {},
+    },
   },
   mutations: { },
   actions: { },

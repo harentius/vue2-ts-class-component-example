@@ -1,7 +1,7 @@
 <template>
   <div class="homebar">
-    <button-homebar>Menu link</button-homebar>
-    <button-cart />
+    <button-homebar @click.native="$router.push({ name: 'home' })">Home</button-homebar>
+    <button-cart/>
   </div>
 </template>
 
@@ -9,7 +9,7 @@
   import Vue from "vue";
   import Component from "vue-class-component";
   import ButtonHomebar from './ButtonHomebar.vue';
-  import ButtonCart from './ButtonCart.vue';
+  import { ButtonCart } from '@/modules/cart';
 
   @Component({ components: { ButtonHomebar, ButtonCart } })
   export default class App extends Vue {

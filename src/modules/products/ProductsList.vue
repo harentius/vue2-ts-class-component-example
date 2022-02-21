@@ -1,6 +1,7 @@
 <template>
   <div>
     <product v-for="product in products.data"
+      class="float-left"
       :key="product.id"
       :product="product"
     />
@@ -29,5 +30,4 @@
 </script>
 
 <style scoped>
-
 </style>

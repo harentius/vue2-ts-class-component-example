@@ -2,6 +2,7 @@
 <v-card
   class="mx-auto my-12"
   max-width="374"
+  height="600"
   elevation="2"
 >
   <v-img v-if="cover"
