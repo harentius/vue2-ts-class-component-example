@@ -12,9 +12,8 @@
 
   @Component({ components: { ButtonSuccess } })
   export default class ButtonCart extends Vue {
-
-    // @Getter('cartItemsCount')
-    private itemsCount: number = 2;
+    @Getter('totalItems')
+    private itemsCount!: number ;
   };
 </script>
 

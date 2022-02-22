@@ -2,7 +2,7 @@
 <v-card
   class="mx-auto my-12"
   max-width="374"
-  height="600"
+  height="700"
   elevation="2"
 >
   <v-img v-if="cover"
@@ -10,6 +10,7 @@
     width="250"
     height="250"
     :src="cover"
+    @click="$emit('coverClick')"
   ></v-img>
 
   <v-card-title v-if="title">{{ title }}</v-card-title>

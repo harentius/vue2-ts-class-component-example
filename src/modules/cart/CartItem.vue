@@ -1,9 +1,12 @@
 <template>
   <card
-    :cover="product.image"
-    :title="product.title"
+    :cover="cartItem.product.image"
+    :title="cartItem.product.title"
   >
-    {{ product.description }}
+    {{ cartItem.product.description }}
+    <p>
+      <v-chip>Amount: {{ cartItem.amount }}</v-chip>
+    </p>
   </card>
 </template>
 
@@ -17,7 +20,7 @@
   })
   export default class CartItem extends Vue {
     @Prop({ type: Object, required: true })
-    private product!: ProductData;
+    private cartItem!: CartItem;
   }
 </script>
 
