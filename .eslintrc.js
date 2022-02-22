@@ -17,5 +17,4 @@ module.exports = {
       patterns: ['**/modules/*/*']
     }]
   },
-  ignorePatterns: ['webpack.config.js']
 }
