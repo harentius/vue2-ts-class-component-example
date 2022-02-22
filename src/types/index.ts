@@ -1,5 +1,5 @@
-import Loadable from './Loadable';
+import Loadable from './Loadable'
 
 export {
-  Loadable,
+  Loadable
 }

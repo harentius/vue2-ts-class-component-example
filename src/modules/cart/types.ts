@@ -1,4 +1,4 @@
-import { Product } from '@/modules/client';
+import { Product } from '@/modules/client'
 
 export interface CartItem {
   product: Product,

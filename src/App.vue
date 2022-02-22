@@ -6,11 +6,11 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
-import { Homebar } from '@/modules/homebar';
+import { Component, Vue } from 'vue-property-decorator'
+import { Homebar } from '@/modules/homebar'
 
 @Component({
-  components: { Homebar },
+  components: { Homebar }
 })
 export default class App extends Vue {}
 </script>

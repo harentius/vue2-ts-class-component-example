@@ -1,4 +1,4 @@
-import Cart from './Cart.vue';
+import Cart from './Cart.vue'
 
 export default [
   {
@@ -6,4 +6,4 @@ export default [
     name: 'cart',
     component: Cart
   }
-];
+]

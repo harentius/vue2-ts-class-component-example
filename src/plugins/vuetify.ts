@@ -1,8 +1,8 @@
-import Vue from 'vue';
-import Vuetify from 'vuetify/lib/framework';
-import 'vuetify/src/styles/main.sass';
+import Vue from 'vue'
+import Vuetify from 'vuetify/lib/framework'
+import 'vuetify/src/styles/main.sass'
 
-Vue.use(Vuetify);
+Vue.use(Vuetify)
 
 export default new Vuetify({
-});
+})

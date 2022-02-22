@@ -10,23 +10,23 @@
 </template>
 
 <script lang="ts">
-  import { Component, Prop, Vue } from 'vue-property-decorator';
-  import { Card } from '@/components/ui';
-  import { Product as ProductData } from '@/modules/client';
-  import { ButtonAddToCart } from '@/modules/cart';
-  import { eventBus, Events } from '@/eventBus';
+import { Component, Prop, Vue } from 'vue-property-decorator'
+import { Card } from '@/components/ui'
+import { Product as ProductData } from '@/modules/client'
+import { ButtonAddToCart } from '@/modules/cart'
+import { eventBus, Events } from '@/eventBus'
 
-  @Component({
-    components: { Card, ButtonAddToCart }
-  })
-  export default class Product extends Vue {
-    @Prop({ type: Object, required: true })
-    private product!: ProductData;
+@Component({
+  components: { Card, ButtonAddToCart }
+})
+export default class Product extends Vue {
+  @Prop({ type: Object, required: true })
+  private product!: ProductData;
 
-    private eventBus = eventBus;
+  private eventBus = eventBus;
 
-    private Events = Events;
-  }
+  private Events = Events;
+}
 </script>
 
 <style scoped>

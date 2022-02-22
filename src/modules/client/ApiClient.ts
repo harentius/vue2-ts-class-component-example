@@ -1,12 +1,13 @@
+import { Product } from './types'
+
 export default class ApiClient {
-  constructor(
-    private baseUrl: string,
-  ) {
-  }
+  constructor (
+    private baseUrl: string
+  ) { }
 
-  public async getProducts(limit: number = 10) {
-    const result = await fetch(`${this.baseUrl}/products?limit=${limit}`);
+  public async getProducts (limit = 10): Promise<Product[]> {
+    const result = await fetch(`${this.baseUrl}/products?limit=${limit}`)
 
-    return result.json();
+    return result.json()
   }
 }

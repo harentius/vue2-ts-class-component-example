@@ -1,3 +1,3 @@
-import Homebar from './Homebar.vue';
+import Homebar from './Homebar.vue'
 
-export { Homebar };
+export { Homebar }

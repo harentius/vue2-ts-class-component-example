@@ -1,11 +1,12 @@
+
 // used only for depcruise
-const path = require('path');
+const path = require('path')
 
 module.exports = {
   resolve: {
-    extensions: [".ts", ".vue"],
+    extensions: ['.ts', '.vue'],
     alias: {
-      "@": path.resolve(__dirname, "src"),
-    },
-  },
+      '@': path.resolve(__dirname, 'src')
+    }
+  }
 }

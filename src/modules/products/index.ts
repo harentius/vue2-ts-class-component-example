@@ -1,3 +1,3 @@
-import ProductsList from './ProductsList.vue';
+import ProductsList from './ProductsList.vue'
 
-export { ProductsList };
+export { ProductsList }

@@ -3,4 +3,4 @@ interface Loadable<T> {
   isLoading: boolean
 }
 
-export default Loadable;
+export default Loadable

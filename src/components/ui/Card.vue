@@ -22,16 +22,16 @@
 </template>
 
 <script lang="ts">
-  import { Component, Prop, Vue } from 'vue-property-decorator';
+import { Component, Prop, Vue } from 'vue-property-decorator'
 
-  @Component
-  export default class Card extends Vue {
-    @Prop({ type: String })
-    private cover!: string;
+@Component
+export default class Card extends Vue {
+  @Prop({ type: String })
+  private cover!: string;
 
-    @Prop({ type: String })
-    private title!: string;
-  }
+  @Prop({ type: String })
+  private title!: string;
+}
 </script>
 
 <style scoped>

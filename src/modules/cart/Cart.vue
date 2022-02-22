@@ -10,18 +10,20 @@
 </template>
 
 <script lang="ts">
-  import { Component, Prop, Vue } from 'vue-property-decorator';
-  import { Getter } from 'vuex-class';
-  import CartItem from './CartItem.vue';
-  import { Cart as CartData } from './types';
+import { Component, Vue } from 'vue-property-decorator'
+import { Getter } from 'vuex-class'
+import CartItem from './CartItem.vue'
+import { Cart as CartData } from './types'
 
-  @Component({ components: {
-    CartItem,
-  } })
-  export default class Cart extends Vue {
-    @Getter('cart')
-    private cart!: CartData;
+@Component({
+  components: {
+    CartItem
   }
+})
+export default class Cart extends Vue {
+  @Getter('cart')
+  private cart!: CartData;
+}
 </script>
 
 <style scoped>

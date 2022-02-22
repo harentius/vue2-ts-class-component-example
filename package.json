@@ -5,7 +5,9 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "depcruise-modules": "depcruise --include-only \"^src/modules\" --output-type dot src --webpack-config ./webpack.config.js | dot -T svg > ./dependencygraph.svg"
+    "lint": "vue-cli-service lint",
+    "depcruise-modules": "depcruise --include-only \"^src/modules\" --output-type dot src --webpack-config ./webpack.config.js | dot -T svg > ./dependencygraph.svg",
+    "depcruise-lint": "depcruise --config .dependency-cruiser.js src"
   },
   "dependencies": {
     "@mdi/font": "5.9.55",
@@ -21,12 +23,23 @@
     "vuex-class": "^0.3.2"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.18.0",
+    "@typescript-eslint/parser": "^4.18.0",
+    "@vue/cli-plugin-eslint": "~4.5.15",
     "@vue/cli-plugin-router": "~4.5.0",
     "@vue/cli-plugin-typescript": "~4.5.0",
     "@vue/cli-plugin-vuex": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
+    "@vue/eslint-config-standard": "^5.1.2",
+    "@vue/eslint-config-typescript": "^7.0.0",
     "deepmerge": "^4.2.2",
     "dependency-cruiser": "^11.3.1",
+    "eslint": "^6.7.2",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "eslint-plugin-vue": "^6.2.2",
     "sass": "~1.32",
     "sass-loader": "^10",
     "typescript": "~4.1.5",

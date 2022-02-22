@@ -5,14 +5,14 @@
 </template>
 
 <script lang="ts">
-  import Vue from 'vue';
-  import Component from 'vue-class-component';
-  import { Button as ButtonComponent, ButtonType } from '@/components/ui/buttons';
+import Vue from 'vue'
+import Component from 'vue-class-component'
+import { Button as ButtonComponent, ButtonType } from '@/components/ui/buttons'
 
-  @Component({ components: { ButtonComponent } })
-  export default class ButtonCancel extends Vue {
-    private ButtonType = ButtonType;
-  };
+@Component({ components: { ButtonComponent } })
+export default class ButtonCancel extends Vue {
+  private ButtonType = ButtonType;
+}
 </script>
 
 <style scoped>
