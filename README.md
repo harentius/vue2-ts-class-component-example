@@ -1,4 +1,4 @@
-# Example project to demonstrate the best practices of usage Vue 2 with typescript
+# Example project to demonstrate the best practices of usage of Vue 2 with typescript
 
 This is a demo project to just show how we are trying to build frontend application with vue 2 and typescript.
 It uses a set of tools as well as methodologies and conventions which help us to build well-designed and maintanable code.
@@ -20,10 +20,10 @@ Can be in App component, for example.
 1. Use public interfaces (known also as "facades") for every module. (index.ts or index.js file)
 This serves a lot of purposes. Some of them:
     * Manage complexity of code.
-    To use module, need to understand only pubic interface and not entire module.
-    * Facade documents how to use module
-    * It can have good serve for backward compatibility: you need only keep the public interface
-    * Facades give an opportunity to controll modules connections
+    To use a module, you need to understand only pubic interface and not entire module.
+    * Facade defines how to use a module
+    * It can serve well for backward compatibility: you only need to preserve the public interface
+    * Facades give an opportunity to control modules connections
 
 1. Different ways of using modules:
    * Direct imports through facades
