@@ -14,7 +14,7 @@ module.exports = {
   rules: {
     'no-useless-constructor': 'off',
     'no-restricted-imports': ['error', {
-      patterns: ['**/modules/*/*']
+      patterns: ['**/modules/*/**']
     }]
   },
 }
